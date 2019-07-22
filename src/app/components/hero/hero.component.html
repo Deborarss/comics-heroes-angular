@@ -1,0 +1,17 @@
+<h1 class="animated fadeIn">{{ hero.name | uppercase}} <small>({{ hero.appearance | date:'y' }})</small><h1>
+<div class="bottom-line mt-1"></div>
+
+<div class="row animated fadeIn fast">
+  <div class="col-6">
+    <img [src]="hero.img" class="img-fluid" [alt]="hero.name" [title]="hero.name">
+    <div class="d-flex justify-content-end">
+      <img *ngIf="hero.company == 'Marvel'" src="assets/img/marvel-logo.png" alt="Marvel" title="Marvel">
+      <img *ngIf="hero.company == 'DC'" src="assets/img/dc-logo.png" alt="DC" title="DC">
+    </div>
+    <a [routerLink]="['/herois']" class="btn btn-primary btn-block mt-3">Voltar</a>
+  </div>
+  <div class="col-6 align-self-center">
+    <p class="bio">{{ hero.bio }}</p>
+  </div>
+ 
+</div>

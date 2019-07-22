@@ -1,0 +1,28 @@
+.navbar {
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--primary) !important;
+  padding-left: 30px;
+  transition: color 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: var(--secondary) !important;
+}
+
+@media(max-width: 991px) {
+  .navbar-light .navbar-nav .nav-link {
+    padding-left: 0;
+  }
+  
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--secondary) !important;
+}
+

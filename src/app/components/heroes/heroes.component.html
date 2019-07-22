@@ -1,0 +1,11 @@
+<div class="animated fadeIn fast">
+  <h1>Heróis Comics</h1>
+  <div class="bottom-line"></div>
+</div>
+
+<div class="card-columns mt-4">
+
+  <!-- *ngFor="let hero of heroes; let i = index" -->
+  <app-hero-card [hero]="hero" [index]="i" *ngFor="let hero of heroes; let i = index"></app-hero-card>
+
+</div>

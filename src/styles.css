@@ -1,1 +1,119 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #3A66A7 !important;
+  --secondary: #BF102C !important;
+}
+
+body {
+  padding-bottom: 50px;
+}
+
+h3 {
+  color: #333 !important;
+}
+
+h1, h2 {
+  color: #555 !important;
+}
+
+h1, h2, h3 {
+  font-weight: bold !important;
+}
+
+p {
+  color: #777 !important;
+}
+
+/* Buttons */
+.btn-outline-primary {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+.btn-outline-secondary {
+  color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff !important;
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  transition: all 0.3s ease-in;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+/* Cards */
+@media (min-width: 576px) {
+  .card-columns {
+      column-count: 2 !important;
+  }
+}
+@media (min-width: 768px) {
+  .card-columns {
+      column-count: 2 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+      column-count: 3 !important;
+  }
+}
+
+.bio {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Line */
+.bottom-line {
+  background-color: var(--secondary);
+  height: 2px;
+  width: 100px;
+  margin-left: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Animations */
+.animated {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+.fast {
+  animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}

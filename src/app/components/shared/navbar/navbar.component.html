@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link text-primary" [routerLink]="['inicio']">Início</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['herois']">Heróis</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['sobre']">Sobre</a>
+        </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Procurar Herói" aria-label="Procurar" (keyup.enter)="searchHero(searchText.value)" #searchText>
+        <button (click)="searchHero(searchText.value)" class="btn btn-outline-primary my-2 my-sm-0" type="button">Procurar</button>
+      </div>
+    </div>
+  </div>
+</nav>
